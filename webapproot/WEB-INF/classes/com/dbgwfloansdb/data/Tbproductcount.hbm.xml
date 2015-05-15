@@ -1,0 +1,27 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dbgwfloansdb.data.Tbproductcount" table="tbproductcount" catalog="dbgwfloans" dynamic-insert="false" dynamic-update="false">
+        <id name="id" type="integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="productcode" type="string">
+            <column name="productcode" length="2"/>
+        </property>
+        <property name="loancount" type="integer">
+            <column name="loancount"/>
+        </property>
+        <property name="defaultIr" type="float">
+            <column name="defaultIR" precision="12"/>
+        </property>
+        <property name="defaultLoanableAmt" type="big_decimal">
+            <column name="defaultLoanableAmt" precision="16"/>
+        </property>
+        <property name="minTerm" type="big_decimal">
+            <column name="minTerm" precision="16"/>
+        </property>
+        <property name="maxTerm" type="big_decimal">
+            <column name="maxTerm" precision="16"/>
+        </property>
+    </class>
+</hibernate-mapping>

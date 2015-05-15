@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dbgwfloansdb.data.Tbproductdocs" table="tbproductdocs" catalog="dbgwfloans" dynamic-insert="false" dynamic-update="false">
+        <id name="id" type="integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="prodCode" type="string">
+            <column name="prodCode" length="2"/>
+        </property>
+        <property name="docId" type="integer">
+            <column name="docId"/>
+        </property>
+        <property name="remarks" type="string">
+            <column name="remarks" length="100"/>
+        </property>
+    </class>
+</hibernate-mapping>

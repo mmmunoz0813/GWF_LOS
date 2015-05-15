@@ -1,0 +1,11 @@
+{
+	"__metaData": {
+		"service_invalid_BranchService": true, 
+		"service_invalid_BranchFacade": false, 
+		"service_invalid_CodesFacade": false, 
+		"service_invalid_RoleFacade": false, 
+		"service_invalid_UserFacade": false, 
+		"service_invalid_DocumentsFacade": false, 
+		"service_invalid_LoanProductFacade": false
+	}
+}

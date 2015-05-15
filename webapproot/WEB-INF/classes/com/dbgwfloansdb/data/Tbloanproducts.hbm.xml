@@ -1,0 +1,42 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dbgwfloansdb.data.Tbloanproducts" table="tbloanproducts" catalog="dbgwfloans" dynamic-insert="false" dynamic-update="false">
+        <id name="prodCode" type="string">
+            <column name="prodCode" length="2"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="productName" type="string">
+            <column name="productName" length="45"/>
+        </property>
+        <property name="productType" type="string">
+            <column name="productType" length="2"/>
+        </property>
+        <property name="minIr" type="float">
+            <column name="minIR" precision="12"/>
+        </property>
+        <property name="maxIr" type="float">
+            <column name="maxIR" precision="12"/>
+        </property>
+        <property name="minLoanAmount" type="big_decimal">
+            <column name="minLoanAmount" precision="16"/>
+        </property>
+        <property name="maxLoanAmount" type="big_decimal">
+            <column name="maxLoanAmount" precision="16"/>
+        </property>
+        <property name="minDprequired" type="big_decimal">
+            <column name="minDPrequired" precision="16"/>
+        </property>
+        <property name="comakerrequired" type="boolean">
+            <column name="comakerrequired"/>
+        </property>
+        <property name="interestbaseyear" type="string">
+            <column name="interestbaseyear" length="2"/>
+        </property>
+        <property name="lastupdated" type="timestamp">
+            <column name="lastupdated" length="19"/>
+        </property>
+        <property name="productgroup" type="string">
+            <column name="productgroup" length="2"/>
+        </property>
+    </class>
+</hibernate-mapping>

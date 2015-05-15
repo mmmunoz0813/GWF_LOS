@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.dbgwfloansdb.data.Tbbranch" table="tbbranch" catalog="dbgwfloans" dynamic-insert="false" dynamic-update="false">
+        <id name="brcode" type="string">
+            <column name="brcode" length="5"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="brname" type="string">
+            <column name="brname" length="25" not-null="true"/>
+        </property>
+        <property name="braddress" type="string">
+            <column name="braddress" length="100"/>
+        </property>
+        <property name="brtype" type="string">
+            <column name="brtype" length="2"/>
+        </property>
+        <property name="brstatus" type="string">
+            <column name="brstatus" length="2"/>
+        </property>
+    </class>
+</hibernate-mapping>

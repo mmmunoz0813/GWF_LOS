@@ -1,0 +1,61 @@
+{
+	"methods": [{
+		"name": "getRoles",
+		"operationType": null,
+		"parameters": null,
+		"returnType": "[com.dbgwfloansdb.data.Tbrole]"
+	}, {
+		"name": "getUsers",
+		"operationType": null,
+		"parameters": [{
+			"name": "branch",
+			"type": "java.lang.String"
+		}],
+		"returnType": "[com.dbgwfloansdb.data.Tbuser]"
+	}, {
+		"name": "sampleJavaOperation",
+		"operationType": null,
+		"parameters": null,
+		"returnType": "java.lang.String"
+	}, {
+		"name": "saveUser",
+		"operationType": null,
+		"parameters": [{
+			"name": "id",
+			"type": "java.lang.String"
+		}, {
+			"name": "username",
+			"type": "java.lang.String"
+		}, {
+			"name": "password",
+			"type": "java.lang.String"
+		}, {
+			"name": "lname",
+			"type": "java.lang.String"
+		}, {
+			"name": "fname",
+			"type": "java.lang.String"
+		}, {
+			"name": "mname",
+			"type": "java.lang.String"
+		}, {
+			"name": "expirydate",
+			"type": "java.util.Date"
+		}, {
+			"name": "lastlogindate",
+			"type": "java.util.Date"
+		}, {
+			"name": "branch",
+			"type": "java.lang.String"
+		}, {
+			"name": "status",
+			"type": "java.lang.String"
+		}, {
+			"name": "role",
+			"type": "java.lang.String"
+		}],
+		"returnType": null
+	}],
+	"serviceType": "JSON-RPC",
+	"serviceURL": "UserFacade.json"
+}
