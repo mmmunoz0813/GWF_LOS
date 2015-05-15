@@ -1,9 +1,0 @@
-<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<hibernate-mapping>
-    <class name="com.dbgwfloansdb.data.Tbcodename" table="tbcodename" catalog="dbgwfloans" dynamic-insert="false" dynamic-update="false">
-        <id name="codename" type="string">
-            <column name="codename" length="20"/>
-            <generator class="assigned"/>
-        </id>
-    </class>
-</hibernate-mapping>
